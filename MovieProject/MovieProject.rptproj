@@ -38,6 +38,10 @@
       <Name>05DirectorGroup.rdl</Name>
       <FullPath>05DirectorGroup.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>05DirectorGroup_beta.rdl</Name>
+      <FullPath>05DirectorGroup_beta.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

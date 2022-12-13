@@ -3,11 +3,12 @@
   <DataSet Name="">
     <Query>
       <DataSourceReference>dscMovies</DataSourceReference>
-      <CommandText>SELECT        F.FilmName, F.FilmRunTimeMinutes, D.DirectorName, F.FilmReleaseDate
+      <CommandText>SELECT        F.FilmName, F.FilmRunTimeMinutes, D.DirectorName, F.FilmReleaseDate, C.CountryName
 FROM            tblFilm AS F INNER JOIN
-                         tblDirector AS D ON F.FilmDirectorID = D.DirectorID
-GROUP BY F.FilmName, F.FilmRunTimeMinutes, F.FilmReleaseDate, D.DirectorName
-ORDER BY D.DirectorName</CommandText>
+                         tblDirector AS D ON F.FilmDirectorID = D.DirectorID INNER JOIN
+                         tblCountry AS C ON F.FilmCountryID = C.CountryID
+GROUP BY F.FilmName, F.FilmRunTimeMinutes, F.FilmReleaseDate, D.DirectorName, C.CountryName
+ORDER BY C.CountryName, D.DirectorName</CommandText>
     </Query>
     <Fields>
       <Field Name="FilmName">
@@ -24,6 +25,10 @@ ORDER BY D.DirectorName</CommandText>
       </Field>
       <Field Name="DirectorName">
         <DataField>DirectorName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CountryName">
+        <DataField>CountryName</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
     </Fields>
