@@ -3,9 +3,11 @@
   <DataSet Name="">
     <Query>
       <DataSourceReference>dscMovies</DataSourceReference>
-      <CommandText>SELECT        FilmName, FilmReleaseDate, FilmRunTimeMinutes
-FROM            tblFilm
-ORDER BY FilmName</CommandText>
+      <CommandText>SELECT        F.FilmName, F.FilmRunTimeMinutes, D.DirectorName, F.FilmReleaseDate
+FROM            tblFilm AS F INNER JOIN
+                         tblDirector AS D ON F.FilmDirectorID = D.DirectorID
+GROUP BY F.FilmName, F.FilmRunTimeMinutes, F.FilmReleaseDate, D.DirectorName
+ORDER BY D.DirectorName</CommandText>
     </Query>
     <Fields>
       <Field Name="FilmName">
@@ -19,6 +21,10 @@ ORDER BY FilmName</CommandText>
       <Field Name="FilmRunTimeMinutes">
         <DataField>FilmRunTimeMinutes</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DirectorName">
+        <DataField>DirectorName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

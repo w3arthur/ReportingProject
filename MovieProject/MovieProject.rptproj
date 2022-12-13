@@ -34,6 +34,10 @@
       <Name>04TableOfFilms.rdl</Name>
       <FullPath>04TableOfFilms.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>05DirectorGroup.rdl</Name>
+      <FullPath>05DirectorGroup.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
