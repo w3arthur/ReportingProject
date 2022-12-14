@@ -44,9 +44,6 @@
                 <TablixColumn>
                   <Width>2.63229cm</Width>
                 </TablixColumn>
-                <TablixColumn>
-                  <Width>2.5cm</Width>
-                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
@@ -137,37 +134,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox5</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>Turquoise</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -279,144 +245,12 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <GaugePanel Name="GaugePanel1">
-                          <StateIndicators>
-                            <StateIndicator Name="Indicator1">
-                              <GaugeInputValue>
-                                <Value>=Sum(Fields!FilmRunTimeMinutes.Value)</Value>
-                                <Multiplier>1</Multiplier>
-                                <DataElementOutput>NoOutput</DataElementOutput>
-                              </GaugeInputValue>
-                              <TransformationType>None</TransformationType>
-                              <TransformationScope>Tablix1</TransformationScope>
-                              <MinimumValue>
-                                <Value>NaN</Value>
-                                <Multiplier>1</Multiplier>
-                              </MinimumValue>
-                              <MaximumValue>
-                                <Value>NaN</Value>
-                                <Multiplier>1</Multiplier>
-                              </MaximumValue>
-                              <IndicatorStyle>None</IndicatorStyle>
-                              <IndicatorImage>
-                                <Source>External</Source>
-                                <Value />
-                              </IndicatorImage>
-                              <ScaleFactor>1</ScaleFactor>
-                              <IndicatorStates>
-                                <IndicatorState Name="Red">
-                                  <StartValue>
-                                    <Value>201</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </StartValue>
-                                  <EndValue>
-                                    <Value>1000</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </EndValue>
-                                  <Color>Red</Color>
-                                  <ScaleFactor>1</ScaleFactor>
-                                  <IndicatorStyle>TrafficLightUnrimmed</IndicatorStyle>
-                                  <IndicatorImage>
-                                    <Source>External</Source>
-                                    <Value />
-                                  </IndicatorImage>
-                                </IndicatorState>
-                                <IndicatorState Name="Yellow">
-                                  <StartValue>
-                                    <Value>151</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </StartValue>
-                                  <EndValue>
-                                    <Value>200</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </EndValue>
-                                  <Color>Yellow</Color>
-                                  <ScaleFactor>1</ScaleFactor>
-                                  <IndicatorStyle>TrafficLightUnrimmed</IndicatorStyle>
-                                  <IndicatorImage>
-                                    <Source>External</Source>
-                                    <Value />
-                                  </IndicatorImage>
-                                </IndicatorState>
-                                <IndicatorState Name="Green">
-                                  <StartValue>
-                                    <Value>100</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </StartValue>
-                                  <EndValue>
-                                    <Value>150</Value>
-                                    <Multiplier>1</Multiplier>
-                                  </EndValue>
-                                  <Color>Green</Color>
-                                  <ScaleFactor>1</ScaleFactor>
-                                  <IndicatorStyle>TrafficLightUnrimmed</IndicatorStyle>
-                                  <IndicatorImage>
-                                    <Source>External</Source>
-                                    <Value />
-                                  </IndicatorImage>
-                                </IndicatorState>
-                              </IndicatorStates>
-                              <Angle>0</Angle>
-                              <StateDataElementName />
-                              <rd:IconsSet>ThreeUnrimmedTrafficLights</rd:IconsSet>
-                              <Style>
-                                <ShadowOffset>2pt</ShadowOffset>
-                              </Style>
-                              <Top>4</Top>
-                              <Left>4</Left>
-                              <Height>92</Height>
-                              <Width>92</Width>
-                            </StateIndicator>
-                          </StateIndicators>
-                          <AutoLayout>true</AutoLayout>
-                          <BackFrame>
-                            <Style>
-                              <Border>
-                                <Style>None</Style>
-                              </Border>
-                              <BackgroundColor>Gainsboro</BackgroundColor>
-                              <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
-                              <BackgroundGradientEndColor>Gray</BackgroundGradientEndColor>
-                              <BackgroundHatchType>None</BackgroundHatchType>
-                              <ShadowOffset>0pt</ShadowOffset>
-                            </Style>
-                            <FrameBackground>
-                              <Style>
-                                <BackgroundColor>Silver</BackgroundColor>
-                                <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
-                                <BackgroundGradientEndColor>Gray</BackgroundGradientEndColor>
-                                <BackgroundHatchType>None</BackgroundHatchType>
-                              </Style>
-                            </FrameBackground>
-                            <FrameImage>
-                              <Source>External</Source>
-                              <Value />
-                            </FrameImage>
-                          </BackFrame>
-                          <TopImage>
-                            <Source>External</Source>
-                            <Value />
-                          </TopImage>
-                          <DataSetName>DataSet1</DataSetName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>White</BackgroundColor>
-                          </Style>
-                        </GaugePanel>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -537,7 +371,7 @@
             <Top>1.50495cm</Top>
             <Left>1.18746cm</Left>
             <Height>1.2cm</Height>
-            <Width>9.61604cm</Width>
+            <Width>7.11604cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>

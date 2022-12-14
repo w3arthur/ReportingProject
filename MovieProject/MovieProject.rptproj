@@ -82,6 +82,10 @@
       <Name>13FontFontation.rdl</Name>
       <FullPath>13FontFontation.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>14Indicators.rdl</Name>
+      <FullPath>14Indicators.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
