@@ -20,6 +20,10 @@
       <Name>dtsFinance.rsd</Name>
       <FullPath>dtsFinance.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dtsFilms2.rsd</Name>
+      <FullPath>dtsFilms2.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -63,8 +67,8 @@
       <FullPath>08SplittingText.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>12_3SecondRowColoring1.rdl</Name>
-      <FullPath>12_3SecondRowColoring1.rdl</FullPath>
+      <Name>09FilmDates.rdl</Name>
+      <FullPath>09FilmDates.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>10Condition1.rdl</Name>
@@ -75,20 +79,36 @@
       <FullPath>11Condition2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>09FilmDates.rdl</Name>
-      <FullPath>09FilmDates.rdl</FullPath>
+      <Name>12_3SecondRowColoring1.rdl</Name>
+      <FullPath>12_3SecondRowColoring1.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>13FontFontation.rdl</Name>
       <FullPath>13FontFontation.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>14_1Indicators.rdl</Name>
+      <FullPath>14_1Indicators.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>14Indicators.rdl</Name>
       <FullPath>14Indicators.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>14_1Indicators.rdl</Name>
-      <FullPath>14_1Indicators.rdl</FullPath>
+      <Name>18_2OscarsGauge.rdl</Name>
+      <FullPath>18_2OscarsGauge.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>18OscarsGauge.rdl</Name>
+      <FullPath>18OscarsGauge.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>19RunTImeGauge.rdl</Name>
+      <FullPath>19RunTImeGauge.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>20BasicFilmParameters.rdl</Name>
+      <FullPath>20BasicFilmParameters.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
