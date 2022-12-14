@@ -4,26 +4,18 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <SharedDataSet>
-        <SharedDataSetReference>dtsFinance</SharedDataSetReference>
+        <SharedDataSetReference>dtsActors</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="FilmName">
-          <DataField>FilmName</DataField>
+        <Field Name="ActorName">
+          <DataField>ActorName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FilmBudgetDollars">
-          <DataField>FilmBudgetDollars</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="FirstName">
+          <Value>=Left(Fields!ActorName.Value, InStr(Fields!ActorName.Value, " ") - 1)</Value>
         </Field>
-        <Field Name="FilmBoxOfficeDollars">
-          <DataField>FilmBoxOfficeDollars</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="FilmPL">
-          <Value>=Fields!FilmBoxOfficeDollars.Value - Fields!FilmBudgetDollars.Value</Value>
-        </Field>
-        <Field Name="FilmPLDescription">
-          <Value>=IIf(Fields!FilmBoxOfficeDollars.Value &gt; Fields!FilmBudgetDollars.Value, "Profit", "Loss")</Value>
+        <Field Name="LastName">
+          <Value>=Right(Fields!ActorName.Value, Len(Fields!ActorName.Value) - InStr(Fields!ActorName.Value, " "))</Value>
         </Field>
       </Fields>
     </DataSet>
@@ -36,19 +28,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>5.33986cm</Width>
+                  <Width>4.41382cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.89549cm</Width>
+                  <Width>4.41382cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.73132cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>5.56917cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>5.03682cm</Width>
+                  <Width>4.41382cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -64,7 +50,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Film Name</Value>
+                                  <Value>Actor Name</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -77,7 +63,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -95,7 +81,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Film Budget Dollars</Value>
+                                  <Value>First Name</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -108,7 +94,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -126,7 +112,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Film Box Office Dollars</Value>
+                                  <Value>Last Name</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -139,69 +125,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>CornflowerBlue</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Film PL</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>CornflowerBlue</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox9">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Film PLDescription</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox9</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <BackgroundColor>Turquoise</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -217,21 +141,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="FilmName">
+                        <Textbox Name="ActorName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FilmName.Value</Value>
+                                  <Value>=Fields!ActorName.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FilmName</rd:DefaultName>
+                          <rd:DefaultName>ActorName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -247,21 +171,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="FilmBudgetDollars">
+                        <Textbox Name="FirstName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FilmBudgetDollars.Value</Value>
+                                  <Value>=Fields!FirstName.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FilmBudgetDollars</rd:DefaultName>
+                          <rd:DefaultName>FirstName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -277,81 +201,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="FilmBoxOfficeDollars">
+                        <Textbox Name="LastName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FilmBoxOfficeDollars.Value</Value>
+                                  <Value>=Fields!LastName.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FilmBoxOfficeDollars</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="FilmPL">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!FilmPL.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>FilmPL</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="FilmPLDescription">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!FilmPLDescription.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>FilmPLDescription</rd:DefaultName>
+                          <rd:DefaultName>LastName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -374,8 +238,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -389,15 +251,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <SortExpressions>
-              <SortExpression>
-                <Value>=Fields!FilmPL.Value</Value>
-                <Direction>Descending</Direction>
-              </SortExpression>
-            </SortExpressions>
-            <Top>1.29328cm</Top>
+            <Top>1.47849cm</Top>
+            <Left>1.05516cm</Left>
             <Height>1.2cm</Height>
-            <Width>26.57266cm</Width>
+            <Width>13.24146cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -408,7 +265,7 @@
         <Height>2in</Height>
         <Style />
       </Body>
-      <Width>10.46168in</Width>
+      <Width>6.5in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -422,5 +279,5 @@
     </ReportSection>
   </ReportSections>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>bb50c577-de31-44a3-976d-58868a3697c4</rd:ReportID>
+  <rd:ReportID>b88379e1-93ce-4d0b-ab5a-68c6226b122a</rd:ReportID>
 </Report>

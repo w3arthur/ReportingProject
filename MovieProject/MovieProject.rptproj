@@ -16,6 +16,10 @@
       <Name>dtsFinance.rsd</Name>
       <FullPath>dtsFinance.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dtsActors.rsd</Name>
+      <FullPath>dtsActors.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -51,8 +55,16 @@
       <FullPath>06ProfitCalculations.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>07ProfitCalculations.rdl</Name>
-      <FullPath>07ProfitCalculations.rdl</FullPath>
+      <Name>07DurationCalculations.rdl</Name>
+      <FullPath>07DurationCalculations.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>08SplittingText.rdl</Name>
+      <FullPath>08SplittingText.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>09FilmDates.rdl</Name>
+      <FullPath>09FilmDates.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
