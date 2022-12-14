@@ -12,6 +12,10 @@
       <Name>dtsFilms.rsd</Name>
       <FullPath>dtsFilms.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>dtsFinance.rsd</Name>
+      <FullPath>dtsFinance.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -27,12 +31,12 @@
       <FullPath>03EmbededFilmList.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>04TableOfFilms_beta.rdl</Name>
-      <FullPath>04TableOfFilms_beta.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>04TableOfFilms.rdl</Name>
       <FullPath>04TableOfFilms.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>04TableOfFilms_beta.rdl</Name>
+      <FullPath>04TableOfFilms_beta.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>05DirectorGroup.rdl</Name>
@@ -41,6 +45,14 @@
     <ProjectItem>
       <Name>05DirectorGroup_beta.rdl</Name>
       <FullPath>05DirectorGroup_beta.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>06ProfitCalculations.rdl</Name>
+      <FullPath>06ProfitCalculations.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>07ProfitCalculations.rdl</Name>
+      <FullPath>07ProfitCalculations.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
