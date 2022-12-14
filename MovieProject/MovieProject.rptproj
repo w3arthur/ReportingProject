@@ -63,20 +63,24 @@
       <FullPath>08SplittingText.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>12_3SecondRowColoring1.rdl</Name>
+      <FullPath>12_3SecondRowColoring1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>10Condition1.rdl</Name>
+      <FullPath>10Condition1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>11Condition2.rdl</Name>
+      <FullPath>11Condition2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>09FilmDates.rdl</Name>
       <FullPath>09FilmDates.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>10.rdl</Name>
-      <FullPath>10.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>10_2.rdl</Name>
-      <FullPath>10_2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>10_3.rdl</Name>
-      <FullPath>10_3.rdl</FullPath>
+      <Name>13FontFontation.rdl</Name>
+      <FullPath>13FontFontation.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
