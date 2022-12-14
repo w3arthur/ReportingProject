@@ -9,16 +9,16 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
+      <Name>dtsActors.rsd</Name>
+      <FullPath>dtsActors.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>dtsFilms.rsd</Name>
       <FullPath>dtsFilms.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>dtsFinance.rsd</Name>
       <FullPath>dtsFinance.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>dtsActors.rsd</Name>
-      <FullPath>dtsActors.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -65,6 +65,18 @@
     <ProjectItem>
       <Name>09FilmDates.rdl</Name>
       <FullPath>09FilmDates.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>10.rdl</Name>
+      <FullPath>10.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>10_2.rdl</Name>
+      <FullPath>10_2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>10_3.rdl</Name>
+      <FullPath>10_3.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
