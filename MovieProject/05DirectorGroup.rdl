@@ -254,7 +254,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="FilmName">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -543,7 +542,7 @@
             <DataSetName>DataSet2</DataSetName>
             <Top>0.47307cm</Top>
             <Left>3.46287cm</Left>
-            <Height>4.37667cm</Height>
+            <Height>4.37664cm</Height>
             <Width>9.36562cm</Width>
             <Style>
               <Border>

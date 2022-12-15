@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MovieProject", "MovieProject\MovieProject.rptproj", "{E2A3FEDC-041B-477C-A9DB-44CC9AEA36C4}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MovieProject2", "MovieProject2\MovieProject2.rptproj", "{D0B59B1D-8C4A-44CF-A911-1F873A140C98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -20,6 +22,14 @@ Global
 		{E2A3FEDC-041B-477C-A9DB-44CC9AEA36C4}.Release|Default.ActiveCfg = Release
 		{E2A3FEDC-041B-477C-A9DB-44CC9AEA36C4}.Release|Default.Build.0 = Release
 		{E2A3FEDC-041B-477C-A9DB-44CC9AEA36C4}.Release|Default.Deploy.0 = Release
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Debug|Default.ActiveCfg = Debug
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Debug|Default.Build.0 = Debug
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Debug|Default.Deploy.0 = Debug
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.DebugLocal|Default.Build.0 = DebugLocal
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Release|Default.ActiveCfg = Release
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Release|Default.Build.0 = Release
+		{D0B59B1D-8C4A-44CF-A911-1F873A140C98}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
