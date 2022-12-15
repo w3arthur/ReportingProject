@@ -38,6 +38,10 @@
       <Name>24Matrix.rdl</Name>
       <FullPath>24Matrix.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>25Matrix.rdl</Name>
+      <FullPath>25Matrix.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
