@@ -17,12 +17,12 @@
       <FullPath>dtsFilms.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>dtsFinance.rsd</Name>
-      <FullPath>dtsFinance.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>dtsFilms2.rsd</Name>
       <FullPath>dtsFilms2.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dtsFinance.rsd</Name>
+      <FullPath>dtsFinance.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>

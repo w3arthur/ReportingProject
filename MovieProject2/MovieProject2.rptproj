@@ -31,10 +31,6 @@
       <FullPath>23CascadingDropLisy.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>24Matrix.rdl</Name>
       <FullPath>24Matrix.rdl</FullPath>
     </ProjectItem>
@@ -49,6 +45,10 @@
     <ProjectItem>
       <Name>28Lists.rdl</Name>
       <FullPath>28Lists.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>33CountryList.rdl</Name>
+      <FullPath>33CountryList.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
