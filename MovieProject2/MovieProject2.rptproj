@@ -54,6 +54,18 @@
       <Name>33CountryList.rdl</Name>
       <FullPath>33CountryList.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>35CountryChart.rdl</Name>
+      <FullPath>35CountryChart.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>39BasicColumsChart.rdl</Name>
+      <FullPath>39BasicColumsChart.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>40Report1.rdl</Name>
+      <FullPath>40Report1.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
