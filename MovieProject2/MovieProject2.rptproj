@@ -47,6 +47,10 @@
       <FullPath>28Lists.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>34FilmsByCountry.rdl</Name>
+      <FullPath>34FilmsByCountry.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>33CountryList.rdl</Name>
       <FullPath>33CountryList.rdl</FullPath>
     </ProjectItem>

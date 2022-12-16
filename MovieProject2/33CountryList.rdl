@@ -61,13 +61,30 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!CountryName.Value</Value>
-                              <Style />
+                              <Style>
+                                <TextDecoration>Underline</TextDecoration>
+                                <Color>DarkViolet</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>CountryName</rd:DefaultName>
+                      <ActionInfo>
+                        <Actions>
+                          <Action>
+                            <Drillthrough>
+                              <ReportName>34FilmsByCountry</ReportName>
+                              <Parameters>
+                                <Parameter Name="prmCountryID">
+                                  <Value>=Fields!CountryID.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                            </Drillthrough>
+                          </Action>
+                        </Actions>
+                      </ActionInfo>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
