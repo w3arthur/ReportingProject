@@ -8,6 +8,39 @@
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
+                  <Textbox Name="Textbox7">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox7</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>Purple</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+            </TablixCornerRow>
+            <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
                   <Textbox Name="Textbox4">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -58,8 +91,15 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=AVG(Fields(Parameters!prmDataField.Value).Value)</Value>
-                              <Style />
+                              <Value>=Switch(
+Parameters!prmFunction.Value = "Avg", AVG(Fields(Parameters!prmDataField.Value).Value)
+, Parameters!prmFunction.Value = "Sum", SUM(Fields(Parameters!prmDataField.Value).Value)
+, Parameters!prmFunction.Value = "Max", MAX(Fields(Parameters!prmDataField.Value).Value)
+, Parameters!prmFunction.Value = "Min", MIN(Fields(Parameters!prmDataField.Value).Value)
+)</Value>
+                              <Style>
+                                <Format>0.00;(0.00)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -86,34 +126,34 @@
         <TablixColumnHierarchy>
           <TablixMembers>
             <TablixMember>
-              <Group Name="ColumnGroup">
-                <GroupExpressions>
-                  <GroupExpression>=Fields(Parameters!prmColumnField.Value).Value</GroupExpression>
-                </GroupExpressions>
-              </Group>
               <TablixHeader>
-                <Size>1.02333cm</Size>
+                <Size>0.6cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox2">
+                  <Textbox Name="Textbox8">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value />
-                            <Style />
+                            <Value>=Parameters!prmFunction.Label &amp; " " &amp; Parameters!prmRowField.Label</Value>
+                            <Style>
+                              <Color>White</Color>
+                            </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox2</rd:DefaultName>
+                    <rd:DefaultName>Textbox8</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
                         <Style>Solid</Style>
                       </Border>
+                      <BackgroundColor>Purple</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -122,6 +162,53 @@
                   </Textbox>
                 </CellContents>
               </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="ColumnGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields(Parameters!prmColumnField.Value).Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>1.02333cm</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox2">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields(Parameters!prmColumnField.Value).Value</Value>
+                                    <Style>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox2</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>SlateBlue</BackgroundColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
             </TablixMember>
           </TablixMembers>
         </TablixColumnHierarchy>
@@ -133,6 +220,11 @@
                   <GroupExpression>=Fields(Parameters!prmRowField.Value).Value</GroupExpression>
                 </GroupExpressions>
               </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields(Parameters!prmRowField.Value).Value</Value>
+                </SortExpression>
+              </SortExpressions>
               <TablixHeader>
                 <Size>3.06885cm</Size>
                 <CellContents>
@@ -143,7 +235,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value />
+                            <Value>=Fields(Parameters!prmRowField.Value).Value</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -156,6 +248,7 @@
                         <Color>LightGrey</Color>
                         <Style>Solid</Style>
                       </Border>
+                      <BackgroundColor>LightBlue</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -169,7 +262,7 @@
         </TablixRowHierarchy>
         <Top>0.68792cm</Top>
         <Left>1.05833cm</Left>
-        <Height>2.04667cm</Height>
+        <Height>2.64667cm</Height>
         <Width>6.13771cm</Width>
         <Style>
           <Border>
@@ -259,6 +352,11 @@ FROM            tblCertificate INNER JOIN
   <ReportParameters>
     <ReportParameter Name="prmRowField">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CountryName</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Row Field</Prompt>
       <ValidValues>
         <ParameterValues>
@@ -283,6 +381,11 @@ FROM            tblCertificate INNER JOIN
     </ReportParameter>
     <ReportParameter Name="prmColumnField">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CertificateName</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Column Field</Prompt>
       <ValidValues>
         <ParameterValues>
@@ -307,6 +410,11 @@ FROM            tblCertificate INNER JOIN
     </ReportParameter>
     <ReportParameter Name="prmDataField">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>FilmRunTimeMinutes</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Data Field</Prompt>
       <ValidValues>
         <ParameterValues>
@@ -325,6 +433,35 @@ FROM            tblCertificate INNER JOIN
           <ParameterValue>
             <Value>FilmOscarWins</Value>
             <Label>Oscar Wins</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="prmFunction">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Sum</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Function</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>Sum</Value>
+            <Label>Total</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Avg</Value>
+            <Label>Avarage</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Max</Value>
+            <Label>Highest</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Min</Value>
+            <Label>Lowest</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
