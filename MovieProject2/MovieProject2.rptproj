@@ -9,10 +9,6 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
-      <Name>dtsActors.rsd</Name>
-      <FullPath>dtsActors.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>dtsFilms.rsd</Name>
       <FullPath>dtsFilms.rsd</FullPath>
     </ProjectItem>
@@ -23,6 +19,14 @@
     <ProjectItem>
       <Name>dtsFinance.rsd</Name>
       <FullPath>dtsFinance.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dtsActors.rsd</Name>
+      <FullPath>dtsActors.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dtsDirectors.rsd</Name>
+      <FullPath>dtsDirectors.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -81,6 +85,14 @@
     <ProjectItem>
       <Name>48DynamicMatrix.rdl</Name>
       <FullPath>48DynamicMatrix.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>49DocumentMapGroups.rdl</Name>
+      <FullPath>49DocumentMapGroups.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>50DocumentMap.rdl</Name>
+      <FullPath>50DocumentMap.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
