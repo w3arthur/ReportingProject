@@ -47,12 +47,12 @@
       <FullPath>28Lists.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>34FilmsByCountry.rdl</Name>
-      <FullPath>34FilmsByCountry.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>33CountryList.rdl</Name>
       <FullPath>33CountryList.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>34FilmsByCountry.rdl</Name>
+      <FullPath>34FilmsByCountry.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>35CountryChart.rdl</Name>
@@ -63,8 +63,16 @@
       <FullPath>39BasicColumsChart.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>40Report1.rdl</Name>
-      <FullPath>40Report1.rdl</FullPath>
+      <Name>40Charts.rdl</Name>
+      <FullPath>40Charts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>43CountryMainReport.rdl</Name>
+      <FullPath>43CountryMainReport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>44CountryFilmsSubreport.rdl</Name>
+      <FullPath>44CountryFilmsSubreport.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
