@@ -78,6 +78,10 @@
       <Name>45FilmsByCountry.rdl</Name>
       <FullPath>45FilmsByCountry.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>48DynamicMatrix.rdl</Name>
+      <FullPath>48DynamicMatrix.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
