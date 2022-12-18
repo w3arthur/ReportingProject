@@ -1,0 +1,102 @@
+
+GO
+USE Movies
+GO
+CREATE PROCEDURE spFilmList
+AS
+BEGIN
+	SELECT 
+		CountryName
+		, SUM (FilmRunTimeMinutes) AS [TotalRunTime]
+		, AVG( CAST(FilmRunTimeMinutes AS DECIMAL)) AS [AvgRunTime] 
+	FROM tblCountry AS c
+		INNER JOIN tblFilm AS f ON c.CountryID = f.FilmCountryID
+	GROUP BY
+		CountryName
+	ORDER BY
+		CountryName ASC
+END
+
+
+
+GO
+USE Movies
+GO
+ALTER PROCEDURE spFilmList
+AS
+BEGIN
+	SELECT 
+		CountryName
+		, SUM (FilmRunTimeMinutes) AS [TotalRunTime]
+		, AVG( CAST(FilmRunTimeMinutes AS DECIMAL)) AS [AvgRunTime] 
+	FROM tblCountry AS c
+		INNER JOIN tblFilm AS f ON c.CountryID = f.FilmCountryID
+	GROUP BY
+		CountryName
+	ORDER BY
+		CountryName DESC
+END
+
+
+DROP PROCEDURE spFilmList
+GO
+
+
+EXECUTE spFilmList
+
+
+
+
+
+#Parameters
+
+GO
+USE Movies
+GO
+CREATE PROC spFilmCriteria (@minLength AS INT)
+AS
+BEGIN
+	SELECT 
+		FilmName
+		, FilmRunTimeMinutes
+	FROM 
+		tblFilm
+	WHERE 
+		FilmRunTimeMinutes > @minLength
+	ORDER BY
+		FilmRunTimeMinutes ASC
+END
+
+
+
+GO
+USE Movies
+GO
+ALTER PROC spFilmCriteria 
+	(
+		@MinLength AS INT			= 0
+		, @MaxLength AS INT			= NULL
+		, @Title AS VARCHAR(MAX)
+	)
+AS
+BEGIN
+	SELECT 
+		FilmName
+		, FilmRunTimeMinutes
+	FROM 
+		tblFilm
+	WHERE 
+		FilmRunTimeMinutes >= @MinLength
+			AND ( @MaxLength IS NULL OR FilmRunTimeMinutes <= @MaxLength )
+			AND FilmName LIKE '%' + @Title + '%'
+	ORDER BY
+		FilmRunTimeMinutes ASC
+END
+
+
+
+
+EXEC spFilmCriteria 180, NULL, 'the'
+
+
+EXEC spFilmCriteria @MaxLength = 900, @Title = 'Star'
