@@ -1,5 +1,5 @@
 ﻿Public Class Class1
-    Function LongDate(AnyDate As Date) As String
+    Public Shared Function LongDate(AnyDate As Date) As String
         Dim Suffix As String
         Select Case Day(AnyDate)
             Case 1, 21, 31
