@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomFunctionCS", "CustomF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFunctionCS1", "CustomFunctionCS1\CustomFunctionCS1.csproj", "{4D23FAD1-6F8A-46D7-870A-F4DD993234ED}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomFunctionVB1", "CustomFunctionVB1\CustomFunctionVB1.vbproj", "{B371A4C1-A563-420E-B292-33CA5A50E9DB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,16 +41,6 @@ Global
 		{4D23FAD1-6F8A-46D7-870A-F4DD993234ED}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4D23FAD1-6F8A-46D7-870A-F4DD993234ED}.Release|x64.ActiveCfg = Release|Any CPU
 		{4D23FAD1-6F8A-46D7-870A-F4DD993234ED}.Release|x86.ActiveCfg = Release|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Release|ARM.ActiveCfg = Release|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Release|x64.ActiveCfg = Release|Any CPU
-		{B371A4C1-A563-420E-B292-33CA5A50E9DB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

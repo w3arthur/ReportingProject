@@ -110,6 +110,10 @@
       <Name>56AddingCode.rdl</Name>
       <FullPath>56AddingCode.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>57Dll.rdl</Name>
+      <FullPath>57Dll.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
