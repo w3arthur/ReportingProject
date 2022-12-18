@@ -94,6 +94,22 @@
       <Name>50DocumentMap.rdl</Name>
       <FullPath>50DocumentMap.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>51ReportVariables.rdl</Name>
+      <FullPath>51ReportVariables.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>53GroupVariables.rdl</Name>
+      <FullPath>53GroupVariables.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>54Template.rdl</Name>
+      <FullPath>54Template.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>56AddingCode.rdl</Name>
+      <FullPath>56AddingCode.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
