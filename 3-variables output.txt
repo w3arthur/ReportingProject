@@ -1,0 +1,32 @@
+ALTER PROC spFilmsInYear 
+	( 
+		@Year INT
+		, @FilmList VARCHAR(MAX) OUTPUT 
+		--, @FilmCount INT OUTPUT 
+	)
+AS
+BEGIN
+	DECLARE @Films VARCHAR(MAX)
+
+	SET @Films = ''
+	SELECT
+		@Films = @Films + FilmName + ', '
+	FROM
+		tblFilm
+	WHERE
+		YEAR(FilmReleaseDate) = @Year
+	ORDER BY
+		FilmName ASC
+	--SET @FilmCount = @@ROWCOUNT
+	DECLARE @FilmCount VARCHAR(MAX) = @@ROWCOUNT
+	SET @FilmList = @Films
+	
+	RETURN @FilmCount
+END
+
+
+
+DECLARE @Names VARCHAR(MAX)
+DECLARE @Count INT 
+EXEC @Count = spFilmsInYear @Year = 2000, @FilmList = @Names OUTPUT
+SELECT @Count AS [Film Count], @Names AS [Film List]

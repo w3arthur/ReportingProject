@@ -1,0 +1,69 @@
+-- if
+
+DECLARE @NumFilms INT
+
+SET @NumFilms = (SELECT COUNT(*) FROM tblFilm WHENE FilmGenreID = 3)
+
+IF @NumFilms > 5
+	BEGIN
+		PRINT 'Warning'
+		PRINT 'More then 5 films romantic films'
+	END
+ELSE
+	PRINT 'Less then 5 films romantic films'
+
+
+
+
+
+--While
+
+DECLARE @Counter INT
+DECLARE @MaxOscars INT
+DECLARE @NumFilms INT
+
+SET @Counter = 0
+SET @MaxOscars = (SELECT MAX(FilmOscarWins) FROM tbFilm)
+
+WHILE @Counter <= @MaxOscars
+	BEGIN
+		SET @NumFilms = (SELECT COUNT(*) FROM tblFilm WHERE FilmOscarWins = @Counter)
+		-- IF @NumFilms = 0 BREAK
+		PRINT CAST(@NumFilms, VARCHAR(3)) + ' films have won ' + PRINT CAST(@Counter, VARCHAR(2)) + ' Oscars'
+		SET @Counter = @Counter + 1
+	END
+
+
+
+
+
+-- Cursors	(one row at a time)
+
+DECLARE @FilmID INT
+DECLARE @FilmName VARCHAR(MAX)
+
+DECLARE FilmCursor CURSOR FOR
+	SELECT FilmID, FilmName FROM tblFilm
+
+OPEN FilmCursor
+
+FETCH NEXT FROM FilmCursor INTO @FilmID, @FilmName
+
+WHILE @@FETCH_STATUS = 0
+	BEGIN
+		PRINT 'character in film ' + @FilmName
+		SELECT CastCharacterName FROM tblCast WHERE CastFilmID = @FilmID
+
+		FETCH NEXT FROM FilmCursor INTO @FilmID, @FilmName
+	END
+
+CLOSE FilmCursor
+DEALLOCATE FilmCursor
+
+
+
+
+
+
+
+
