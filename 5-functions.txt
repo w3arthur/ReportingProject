@@ -1,0 +1,63 @@
+--functions
+
+SELECT
+	FilmName
+	, FilmReleaseDate
+	, DATENAME(DW, FilmReleaseDate) 
+	 + ' ' + DATENAME(D, FilmReleaseDate)
+	 + ' ' + DATENAME(M, FilmReleaseDate)
+	 + ' ' + DATENAME(YY, FilmReleaseDate)
+FROM
+	tblFilm
+
+
+
+--functions
+
+USE Movies
+GO
+
+CREATE FUNCTION fnLongDate 
+	(@FullDate AS DATETIME) 
+RETURNS VARCHAR(MAX)
+AS
+BEGIN
+	RETURN DATENAME(DW, @FullDate) 
+	 + ' ' + DATENAME(D, @FullDate)
+	 + 
+	 CASE
+		WHEN DAY(@FullDate) IN (1, 21, 31) THEN 'st'
+		WHEN DAY(@FullDate) IN (2, 22) THEN 'nd'
+		WHEN DAY(@FullDate) IN (3, 23) THEN 'st'
+		ELSE 'th'
+	 END
+	 + ' ' + DATENAME(M, @FullDate)
+	 + ' ' + DATENAME(YY, @FullDate)
+END
+
+GO
+
+
+
+
+
+
+SELECT
+	FilmName
+	, FilmReleaseDate
+	, [dbo].[fnLongDate](FilmReleaseDate)
+FROM
+	tblFilm
+
+
+
+
+
+
+
+SELECT
+	ActorName
+	, ActorDOB
+	, [dbo].[fnLongDate](ActorDOB)
+FROM
+	tblActor
